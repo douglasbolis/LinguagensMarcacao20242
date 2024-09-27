@@ -1,0 +1,32 @@
+table {
+  margin-bottom: 80px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table_1 {
+  text-align: left;
+  width: 300px;
+}
+
+.table_2 {
+  text-align: left;
+  width: 260px;
+}
+
+.table_3 {
+  text-align: left;
+  width: 250px;
+}
+
+.table_4 {
+  text-align: center;
+  width: 250px;
+}
+
+.table_4_values {
+  text-align: right;
+}
