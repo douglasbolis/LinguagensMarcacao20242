@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercício 3 - Formulário</title>
+  <title>Cadastro</title>
 </head>
+
 <body>
-  
+  <div>
+    <div>
+      <form action="index.html" method="post">
+        <h1>Cadastrar usuário</h1>
+        <!-- Dados pessoais -->
+        <fieldset>
+          <legend>1 Dados pessoais</legend>
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+          </div>
+          <div>
+            <label for="confirma_senha">Confirma senha:</label>
+            <input type="password" id="confirma_senha" name="confirma_senha" required>
+          </div>
+          <div>
+            <label>Idade:</label>
+            <input type="radio" id="idade_abaixo_igual_17" name="idade" value="idade_abaixo_igual_17">
+            <label for="idade_abaixo_igual_17">Abaixo ou igual 17</label>
+            <input type="radio" id="idade_acima_17" name="idade" value="idade_acima_17">
+            <label for="idade_acima_17">Acima 17</label>
+          </div>
+        </fieldset>
+
+        <!-- Perfil -->
+        <fieldset>
+          <legend>2 Perfil</legend>
+          <div>
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao"></textarea>
+          </div>
+          <div>
+            <label for="perfil_trabalho">Perfil trabalho:</label>
+            <select id="perfil_trabalho" name="perfil_trabalho">
+              <option value="frontend">Front-End Developer</option>
+              <option value="backend">Back-End Developer</option>
+              <option value="fullstack">Full-Stack Developer</option>
+            </select>
+          </div>
+          <div>
+            <label>Interesses:</label>
+            <input type="checkbox" id="design" name="interesses" value="design">
+            <label for="design">Design</label>
+            <input type="checkbox" id="programador" name="interesses" value="programador">
+            <label for="programador">Programador</label>
+            <input type="checkbox" id="analista" name="interesses" value="analista">
+            <label for="analista">Analista</label>
+          </div>
+        </fieldset>
+        <input type="submit" value="Enviar dados">
+      </form>
+    </div>
+  </div>
 </body>
+
 </html>
