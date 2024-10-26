@@ -1,0 +1,35 @@
+#profileName {
+  text-align: center;
+  color: darkolivegreen;
+}
+
+#profilePhoto {
+  text-align: center;
+}
+
+.professionalDetails {
+  font-size: 1.5em;
+}
+
+.professionalDetails:hover {
+  background: gray;
+  transition: 1.5s;
+}
+
+p {
+  font-family: Verdana;
+}
+
+ol {
+  list-style-type: upper-alpha;
+}
+
+.personalContact {
+  background: lightblue;
+}
+
+.minhadiv {
+  border: 1px dashed black;
+  background: lightgray;
+  text-align: center;
+}
