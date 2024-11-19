@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="formulario">
+    <form action="index.html" method="get">
+      <h1>Cadastrar usuário</h1>
+      <!-- Dados pessoais -->
+      <div>
+        <p class="titulo2"><span class="titulo_numero">1</span> Dados pessoais</p>
+        <div>
+          <label for="nome">Nome:</label>
+          <input class="form-input-text" type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input class="form-input-text" type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="senha">Senha:</label>
+          <input class="form-input-text" type="password" id="senha" name="senha" required>
+        </div>
+        <div>
+          <label for="confirma_senha">Confirma senha:</label>
+          <input class="form-input-text" type="password" id="confirma_senha" name="confirma_senha" required>
+        </div>
+        <div>
+          <label>Idade:</label>
+          <div>
+            <input type="radio" id="idade_abaixo_igual_17" name="idade" value="idade_abaixo_igual_17">
+            <label for="idade_abaixo_igual_17">Abaixo ou igual 17</label>
+          </div>
+          <div>
+            <input type="radio" id="idade_acima_17" name="idade" value="idade_acima_17">
+            <label for="idade_acima_17">Acima 17</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Perfil -->
+      <div>
+        <p class="titulo2"><span class="titulo_numero">2</span> Perfil</p>
+        <div>
+          <label for="descricao">Descrição:</label>
+          <textarea class="form-input-text" id="descricao" name="descricao"></textarea>
+        </div>
+        <div>
+          <label for="perfil_trabalho">Perfil trabalho:</label>
+          <select class="form-input-text" id="perfil_trabalho" name="perfil_trabalho">
+            <option value="frontend">Front-End Developer</option>
+            <option value="backend">Back-End Developer</option>
+            <option value="fullstack">Full-Stack Developer</option>
+          </select>
+        </div>
+        <div>
+          <label>Interesses:</label>
+          <div>
+            <input type="checkbox" id="design" name="interesses" value="design">
+            <label for="design">Design</label>
+          </div>
+          <div>
+            <input type="checkbox" id="programador" name="interesses" value="programador">
+            <label for="programador">Programador</label>
+          </div>
+          <div>
+            <input type="checkbox" id="analista" name="interesses" value="analista">
+            <label for="analista">Analista</label>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input class="form-input-button" type="submit" value="Enviar dados">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
